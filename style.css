@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-items: center;
+    gap: 75px;
+    background-color: #f7f7f7;
+    font-family: Arial;
+}
+
+body>img {
+    margin-top: 60px;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: black;
+}
+
+section {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.texto {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-items: end;
+    gap: 20px;
+    padding: 20px 40px;
+    background-color: #ffffff;
+}
+
+.texto h2 {
+    font-size: 2rem;
+}
+
+.texto p {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    text-align: right;
+}
+
+.texto a {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 15px 30px;
+    border-radius: 4px;
+    background-color: #ee2211;
+    color: #ffffff;
+}
+
+.texto::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    position: absolute;
+    top: 30px;
+    right: -30px;
+    background-color: #ee2211;
+}
+
+.imagem img {
+    max-width: 100%;
+}
+
+.vantagens {
+    padding: 40px;
+    align-self: center;
+}
+
+.vantagens h1 {
+    text-align: right;
+    font-size: 4rem;
+    color: #c6c6c6;
+}
+
+.vantagens-lista {
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.vantagem {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.vantagem p {
+    grid-column: 2/-1;
+    font-size: 1.25rem;
+    line-height: 1.25;
+}
+
+.vantagem h2 {
+    font-size: 1.25rem;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+footer p {
+    font-size: 1.25rem;
+    padding: 40px;
+}
